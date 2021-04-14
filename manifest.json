@@ -1,0 +1,19 @@
+{
+  "name": "image-display",
+  "description": "特定のURLのときに画像を表示する",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts":[
+    {
+      "matches":[
+        "https:///*",
+        "https:///*"
+      ],
+      "css":["image.css"],
+      "js":["jquery.js", "image.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "images/*"
+  ]
+}
